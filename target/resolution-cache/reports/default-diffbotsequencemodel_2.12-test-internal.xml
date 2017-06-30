@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="diffbotsequencemodel_2.12"
+		revision="1.0"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170628133115"/>
+	<dependencies>
+		<module organisation="cc.mallet" name="mallet">
+			<revision name="2.0.7" status="release" pubdate="20111026162010" resolver="jcenter" artresolver="jcenter" homepage="http://mallet.cs.umass.edu/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Common Public License Version 1.0" url="http://www.eclipse.org/legal/cpl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="2687" time="298" location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/ivy-2.0.7.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/ivy-2.0.7.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom"/>
+				<caller organisation="default" name="diffbotsequencemodel_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="2.0.7" rev-constraint-default="2.0.7" rev-constraint-dynamic="2.0.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="mallet" type="jar" ext="jar" status="successful" details="" size="2125837" time="6007" location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/jars/mallet-2.0.7.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jdom" name="jdom">
+			<revision name="1.1" status="release" pubdate="20071113231607" resolver="jcenter" artresolver="jcenter" homepage="http://www.jdom.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<metadata-artifact status="successful" details="" size="2188" time="252" location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/ivy-1.1.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/ivy-1.1.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="jdom" type="jar" ext="jar" status="successful" details="" size="153115" time="825" location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/jars/jdom-1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.matrix-toolkits-java" name="mtj">
+			<revision name="0.9.14" status="release" pubdate="20110827114713" resolver="jcenter" artresolver="jcenter" homepage="http://code.google.com/p/matrix-toolkits-java/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl.html"/>
+				<metadata-artifact status="successful" details="" size="1551" time="549" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/ivy-0.9.14.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/ivy-0.9.14.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="0.9.14" rev-constraint-default="0.9.14" rev-constraint-dynamic="0.9.14" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="mtj" type="jar" ext="jar" status="successful" details="" size="632301" time="1934" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/jars/mtj-0.9.14.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.netlib-java" name="netlib-java">
+			<revision name="0.9.3" status="release" pubdate="20110829205531" resolver="jcenter" artresolver="jcenter" homepage="http://code.google.com/p/netlib-java/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="1364" time="252" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/ivy-0.9.3.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/ivy-0.9.3.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom"/>
+				<caller organisation="com.googlecode.matrix-toolkits-java" name="mtj" conf="compile, runtime" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.9.14"/>
+				<artifacts>
+					<artifact name="netlib-java" type="jar" ext="jar" status="successful" details="" size="131210" time="943" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/jars/netlib-java-0.9.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sourceforge.f2j" name="arpack_combined_all">
+			<revision name="0.1" status="release" pubdate="20110829083548" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://f2j.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2441" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.pom"/>
+				<caller organisation="com.googlecode.netlib-java" name="netlib-java" conf="compile, runtime" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.9.3"/>
+				<artifacts>
+					<artifact name="arpack_combined_all" type="jar" ext="jar" status="no" details="" size="1194003" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.trove4j" name="trove4j">
+			<revision name="2.0.2" status="release" pubdate="20100914013807" resolver="jcenter" artresolver="jcenter" homepage="http://trove4j.sf.net" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="GNU Lesser General Public License 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
+				<metadata-artifact status="successful" details="" size="1354" time="248" location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/ivy-2.0.2.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/ivy-2.0.2.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="2.0.2" rev-constraint-default="2.0.2" rev-constraint-dynamic="2.0.2" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="trove4j" type="jar" ext="jar" status="successful" details="" size="740642" time="1913" location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/jars/trove4j-2.0.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.jwordnet" name="jwnl">
+			<revision name="1.4_rc3" status="release" pubdate="20110913123321" resolver="jcenter" artresolver="jcenter" homepage="http://jwordnet.sf.net" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD 3-Clause License" url="http://jwordnet.svn.sourceforge.net/svnroot/jwordnet/trunk/jwnl/license.txt"/>
+				<metadata-artifact status="successful" details="" size="4514" time="259" location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/ivy-1.4_rc3.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/ivy-1.4_rc3.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="1.4_rc3" rev-constraint-default="1.4_rc3" rev-constraint-dynamic="1.4_rc3" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="jwnl" type="jar" ext="jar" status="successful" details="" size="199926" time="415" location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/jars/jwnl-1.4_rc3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20080831044520" resolver="jcenter" artresolver="jcenter" homepage="http://commons.apache.org/logging" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="successful" details="" size="18365" time="293" location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="net.sf.jwordnet" name="jwnl" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.4_rc3"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="successful" details="" size="60686" time="301" location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jgrapht" name="jgrapht">
+			<revision name="0.6.0" status="release" pubdate="20060511163845" resolver="jcenter" artresolver="jcenter" homepage="http://jgrapht.sourceforge.net" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="GNU Lesser General Public License Version 2.1, February 1999" url="http://jgrapht.sourceforge.net/LGPL.html"/>
+				<metadata-artifact status="successful" details="" size="739" time="247" location="/Users/alexminnaar/.ivy2/cache/jgrapht/jgrapht/ivy-0.6.0.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/jgrapht/jgrapht/ivy-0.6.0.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="jgrapht" type="jar" ext="jar" status="successful" details="" size="90125" time="389" location="/Users/alexminnaar/.ivy2/cache/jgrapht/jgrapht/jars/jgrapht-0.6.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.beanshell" name="bsh">
+			<revision name="2.0b4" status="release" pubdate="20080831044725" resolver="jcenter" artresolver="jcenter" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<metadata-artifact status="successful" details="" size="1195" time="249" location="/Users/alexminnaar/.ivy2/cache/org.beanshell/bsh/ivy-2.0b4.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/org.beanshell/bsh/ivy-2.0b4.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="2.0b4" rev-constraint-default="2.0b4" rev-constraint-dynamic="2.0b4" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="bsh" type="jar" ext="jar" status="successful" details="" size="281694" time="949" location="/Users/alexminnaar/.ivy2/cache/org.beanshell/bsh/jars/bsh-2.0b4.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.10" status="release" pubdate="20110929121215" resolver="jcenter" artresolver="jcenter" homepage="http://junit.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2345" time="251" location="/Users/alexminnaar/.ivy2/cache/junit/junit/ivy-4.10.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/junit/junit/ivy-4.10.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom"/>
+				<caller organisation="cc.mallet" name="mallet" conf="default, compile, runtime, master" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="2.0.7"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="successful" details="" size="253160" time="879" location="/Users/alexminnaar/.ivy2/cache/junit/junit/jars/junit-4.10.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.1" status="release" pubdate="20070718121143" resolver="jcenter" artresolver="jcenter" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="successful" details="" size="481" time="254" location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml" searched="true" original-local-location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml.original" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom"/>
+				<caller organisation="junit" name="junit" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="4.10"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="successful" details="" size="76643" time="394" location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.2" status="release" pubdate="20170413011911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/alexminnaar/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.pom"/>
+				<caller organisation="default" name="diffbotsequencemodel_2.12" conf="test, compile, provided, test-internal, runtime, optional" rev="2.12.2" rev-constraint-default="2.12.2" rev-constraint-dynamic="2.12.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5278660" time="0" location="/Users/alexminnaar/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

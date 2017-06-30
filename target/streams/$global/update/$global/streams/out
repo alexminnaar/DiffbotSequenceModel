@@ -1,0 +1,780 @@
+[info] Updating {file:/Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/}diffbotsequencemodel...
+[debug] :: resolving dependencies :: default#diffbotsequencemodel_2.12;1.0
+[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+[debug] 	validate = true
+[debug] 	refresh = false
+[debug] resolving dependencies for configuration 'compile'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->default(compile)]
+[info] Resolving org.scala-lang#scala-library;2.12.2 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b6ba135
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.2
+[debug] 	found org.scala-lang#scala-library;2.12.2 in sbt-chain
+[debug] 	[2.12.2] org.scala-lang#scala-library;2.12.2
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->default(compile)]
+[info] Resolving cc.mallet#mallet;2.0.7 ...
+[debug] sbt-chain: Checking cache for: dependency: cc.mallet#mallet;2.0.7 {compile=[default(compile)]}
+[info] Resolving cc.mallet#mallet;2.0.7 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: cc.mallet#mallet;2.0.7 {compile=[default(compile)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/cc.mallet/mallet/2.0.7/ivys/ivy.xml
+[debug] 	local: no ivy file found for cc.mallet#mallet;2.0.7
+[debug] 		tried https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom
+[debug] 	jcenter: found md file for cc.mallet#mallet;2.0.7
+[debug] 		=> https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom (2.0.7)
+[debug] downloading https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom
+[debug] 	[SUCCESSFUL ] cc.mallet#mallet;2.0.7!mallet.pom(pom.original) (298ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/cc.mallet/mallet/2.0.7/jars/mallet.jar
+[debug] 		tried https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar
+[debug] 	found cc.mallet#mallet;2.0.7 in jcenter
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->master(compile)]
+[info] Resolving junit#junit;4.10 ...
+[debug] sbt-chain: Checking cache for: dependency: junit#junit;4.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving junit#junit;4.10 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: junit#junit;4.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/junit/junit/4.10/ivys/ivy.xml
+[debug] 	local: no ivy file found for junit#junit;4.10
+[debug] 		tried https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom
+[debug] 	jcenter: found md file for junit#junit;4.10
+[debug] 		=> https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom (4.10)
+[debug] downloading https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.pom
+[debug] 	[SUCCESSFUL ] junit#junit;4.10!junit.pom(pom.original) (251ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/junit/junit/4.10/jars/junit.jar
+[debug] 		tried https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar
+[debug] 	found junit#junit;4.10 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
+[info] Resolving org.hamcrest#hamcrest-core;1.1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving org.hamcrest#hamcrest-core;1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.hamcrest#hamcrest-core;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.hamcrest/hamcrest-core/1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.hamcrest#hamcrest-core;1.1
+[debug] 		tried https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[debug] 	jcenter: found md file for org.hamcrest#hamcrest-core;1.1
+[debug] 		=> https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (1.1)
+[debug] downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[debug] 	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.pom(pom.original) (254ms)
+[info] Resolving org.hamcrest#hamcrest-parent;1.1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.hamcrest#hamcrest-parent;1.1 {}
+[info] Resolving org.hamcrest#hamcrest-parent;1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.hamcrest#hamcrest-parent;1.1 {}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.hamcrest#hamcrest-parent;1.1
+[debug] 		tried https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[debug] 	jcenter: found md file for org.hamcrest#hamcrest-parent;1.1
+[debug] 		=> https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (1.1)
+[debug] downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[debug] 	[SUCCESSFUL ] org.hamcrest#hamcrest-parent;1.1!hamcrest-parent.pom(pom.original) (269ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.hamcrest/hamcrest-parent/1.1/jars/hamcrest-parent.jar
+[debug] 		tried https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://jcenter.bintray.com/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.jar
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.hamcrest/hamcrest-core/1.1/jars/hamcrest-core.jar
+[debug] 		tried https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[debug] 	found org.hamcrest#hamcrest-core;1.1 in jcenter
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->master(compile)]
+[info] Resolving org.beanshell#bsh;2.0b4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.beanshell#bsh;2.0b4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving org.beanshell#bsh;2.0b4 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.beanshell#bsh;2.0b4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.beanshell/bsh/2.0b4/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.beanshell#bsh;2.0b4
+[debug] 		tried https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom
+[debug] 	jcenter: found md file for org.beanshell#bsh;2.0b4
+[debug] 		=> https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom (2.0b4)
+[debug] downloading https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom
+[debug] 	[SUCCESSFUL ] org.beanshell#bsh;2.0b4!bsh.pom(pom.original) (249ms)
+[info] Resolving org.beanshell#beanshell;2.0b4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.beanshell#beanshell;2.0b4 {}
+[info] Resolving org.beanshell#beanshell;2.0b4 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.beanshell#beanshell;2.0b4 {}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.beanshell/beanshell/2.0b4/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.beanshell#beanshell;2.0b4
+[debug] 		tried https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom
+[debug] 	jcenter: found md file for org.beanshell#beanshell;2.0b4
+[debug] 		=> https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom (2.0b4)
+[debug] downloading https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.pom
+[debug] 	[SUCCESSFUL ] org.beanshell#beanshell;2.0b4!beanshell.pom(pom.original) (258ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.beanshell/beanshell/2.0b4/jars/beanshell.jar
+[debug] 		tried https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.jar
+[debug] CLIENT ERROR: Not Found url=https://jcenter.bintray.com/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/beanshell/beanshell/2.0b4/beanshell-2.0b4.jar
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.beanshell/bsh/2.0b4/jars/bsh.jar
+[debug] 		tried https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[debug] 	found org.beanshell#bsh;2.0b4 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->master(compile)]
+[info] Resolving jgrapht#jgrapht;0.6.0 ...
+[debug] sbt-chain: Checking cache for: dependency: jgrapht#jgrapht;0.6.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving jgrapht#jgrapht;0.6.0 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: jgrapht#jgrapht;0.6.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/jgrapht/jgrapht/0.6.0/ivys/ivy.xml
+[debug] 	local: no ivy file found for jgrapht#jgrapht;0.6.0
+[debug] 		tried https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom
+[debug] 	jcenter: found md file for jgrapht#jgrapht;0.6.0
+[debug] 		=> https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom (0.6.0)
+[debug] downloading https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom
+[debug] 	[SUCCESSFUL ] jgrapht#jgrapht;0.6.0!jgrapht.pom(pom.original) (247ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/jgrapht/jgrapht/0.6.0/jars/jgrapht.jar
+[debug] 		tried https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar
+[debug] 	found jgrapht#jgrapht;0.6.0 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->master(compile)]
+[info] Resolving net.sf.jwordnet#jwnl;1.4_rc3 ...
+[debug] sbt-chain: Checking cache for: dependency: net.sf.jwordnet#jwnl;1.4_rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving net.sf.jwordnet#jwnl;1.4_rc3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: net.sf.jwordnet#jwnl;1.4_rc3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/net.sf.jwordnet/jwnl/1.4_rc3/ivys/ivy.xml
+[debug] 	local: no ivy file found for net.sf.jwordnet#jwnl;1.4_rc3
+[debug] 		tried https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom
+[debug] 	jcenter: found md file for net.sf.jwordnet#jwnl;1.4_rc3
+[debug] 		=> https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom (1.4_rc3)
+[debug] downloading https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom
+[debug] 	[SUCCESSFUL ] net.sf.jwordnet#jwnl;1.4_rc3!jwnl.pom(pom.original) (259ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/net.sf.jwordnet/jwnl/1.4_rc3/jars/jwnl.jar
+[debug] 		tried https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar
+[debug] 	found net.sf.jwordnet#jwnl;1.4_rc3 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[info] Resolving commons-logging#commons-logging;1.1.1 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving commons-logging#commons-logging;1.1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: commons-logging#commons-logging;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/commons-logging/commons-logging/1.1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for commons-logging#commons-logging;1.1.1
+[debug] 		tried https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[debug] 	jcenter: found md file for commons-logging#commons-logging;1.1.1
+[debug] 		=> https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom (1.1.1)
+[debug] downloading https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[debug] 	[SUCCESSFUL ] commons-logging#commons-logging;1.1.1!commons-logging.pom(pom.original) (293ms)
+[info] Resolving org.apache.commons#commons-parent;5 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;5 {}
+[info] Resolving org.apache.commons#commons-parent;5 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;5 {}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.apache.commons/commons-parent/5/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.apache.commons#commons-parent;5
+[debug] 		tried https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[debug] 	jcenter: found md file for org.apache.commons#commons-parent;5
+[debug] 		=> https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom (5)
+[debug] downloading https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[debug] 	[SUCCESSFUL ] org.apache.commons#commons-parent;5!commons-parent.pom(pom.original) (295ms)
+[info] Resolving org.apache#apache;4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache#apache;4 {}
+[debug] sbt-chain: module revision found in cache: org.apache#apache;4
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.apache.commons/commons-parent/5/jars/commons-parent.jar
+[debug] 		tried https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.jar
+[debug] CLIENT ERROR: Not Found url=https://jcenter.bintray.com/org/apache/commons/commons-parent/5/commons-parent-5.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.jar
+[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.jar
+[debug] 		tried /Users/alexminnaar/.ivy2/local/commons-logging/commons-logging/1.1.1/jars/commons-logging.jar
+[debug] 		tried https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[debug] 	found commons-logging#commons-logging;1.1.1 in jcenter
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->master(compile)]
+[info] Resolving net.sf.trove4j#trove4j;2.0.2 ...
+[debug] sbt-chain: Checking cache for: dependency: net.sf.trove4j#trove4j;2.0.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving net.sf.trove4j#trove4j;2.0.2 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: net.sf.trove4j#trove4j;2.0.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/net.sf.trove4j/trove4j/2.0.2/ivys/ivy.xml
+[debug] 	local: no ivy file found for net.sf.trove4j#trove4j;2.0.2
+[debug] 		tried https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom
+[debug] 	jcenter: found md file for net.sf.trove4j#trove4j;2.0.2
+[debug] 		=> https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom (2.0.2)
+[debug] downloading https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom
+[debug] 	[SUCCESSFUL ] net.sf.trove4j#trove4j;2.0.2!trove4j.pom(pom.original) (248ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/net.sf.trove4j/trove4j/2.0.2/jars/trove4j.jar
+[debug] 		tried https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar
+[debug] 	found net.sf.trove4j#trove4j;2.0.2 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->master(compile)]
+[info] Resolving com.googlecode.matrix-toolkits-java#mtj;0.9.14 ...
+[debug] sbt-chain: Checking cache for: dependency: com.googlecode.matrix-toolkits-java#mtj;0.9.14 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving com.googlecode.matrix-toolkits-java#mtj;0.9.14 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.googlecode.matrix-toolkits-java#mtj;0.9.14 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/com.googlecode.matrix-toolkits-java/mtj/0.9.14/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.googlecode.matrix-toolkits-java#mtj;0.9.14
+[debug] 		tried https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom
+[debug] 	jcenter: found md file for com.googlecode.matrix-toolkits-java#mtj;0.9.14
+[debug] 		=> https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom (0.9.14)
+[debug] downloading https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom
+[debug] 	[SUCCESSFUL ] com.googlecode.matrix-toolkits-java#mtj;0.9.14!mtj.pom(pom.original) (549ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/com.googlecode.matrix-toolkits-java/mtj/0.9.14/jars/mtj.jar
+[debug] 		tried https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar
+[debug] 	found com.googlecode.matrix-toolkits-java#mtj;0.9.14 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->master(compile)]
+[info] Resolving com.googlecode.netlib-java#netlib-java;0.9.3 ...
+[debug] sbt-chain: Checking cache for: dependency: com.googlecode.netlib-java#netlib-java;0.9.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving com.googlecode.netlib-java#netlib-java;0.9.3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.googlecode.netlib-java#netlib-java;0.9.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/com.googlecode.netlib-java/netlib-java/0.9.3/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.googlecode.netlib-java#netlib-java;0.9.3
+[debug] 		tried https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom
+[debug] 	jcenter: found md file for com.googlecode.netlib-java#netlib-java;0.9.3
+[debug] 		=> https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom (0.9.3)
+[debug] downloading https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom
+[debug] 	[SUCCESSFUL ] com.googlecode.netlib-java#netlib-java;0.9.3!netlib-java.pom(pom.original) (252ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/com.googlecode.netlib-java/netlib-java/0.9.3/jars/netlib-java.jar
+[debug] 		tried https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar
+[debug] 	found com.googlecode.netlib-java#netlib-java;0.9.3 in jcenter
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master(compile)]
+[info] Resolving net.sourceforge.f2j#arpack_combined_all;0.1 ...
+[debug] sbt-chain: Checking cache for: dependency: net.sourceforge.f2j#arpack_combined_all;0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: net.sourceforge.f2j#arpack_combined_all;0.1
+[debug] 	found net.sourceforge.f2j#arpack_combined_all;0.1 in sbt-chain
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->master(compile)]
+[info] Resolving org.jdom#jdom;1.1 ...
+[debug] sbt-chain: Checking cache for: dependency: org.jdom#jdom;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving org.jdom#jdom;1.1 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: org.jdom#jdom;1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.jdom/jdom/1.1/ivys/ivy.xml
+[debug] 	local: no ivy file found for org.jdom#jdom;1.1
+[debug] 		tried https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom
+[debug] 	jcenter: found md file for org.jdom#jdom;1.1
+[debug] 		=> https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom (1.1)
+[debug] downloading https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom
+[debug] 	[SUCCESSFUL ] org.jdom#jdom;1.1!jdom.pom(pom.original) (252ms)
+[debug] 		tried /Users/alexminnaar/.ivy2/local/org.jdom/jdom/1.1/jars/jdom.jar
+[debug] 		tried https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar
+[debug] 	found org.jdom#jdom;1.1 in jcenter
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->master]
+[debug] resolving dependencies for configuration 'runtime'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [runtime]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->compile]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->compile]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->master]
+[debug] resolving dependencies for configuration 'test'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [test]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [runtime]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->compile]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->compile]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->master]
+[debug] resolving dependencies for configuration 'provided'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [provided]
+[debug] resolving dependencies for configuration 'optional'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [optional]
+[debug] resolving dependencies for configuration 'compile-internal'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile-internal]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->compile]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->compile]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->master]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [optional]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [provided]
+[debug] resolving dependencies for configuration 'runtime-internal'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [runtime-internal]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [runtime]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->compile]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->compile]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->master]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [optional]
+[debug] resolving dependencies for configuration 'test-internal'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [test-internal]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [test]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [runtime]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->default(compile)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [compile->compile(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->master(compile)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [compile->compile(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->master(compile)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->master(compile)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [compile->compile(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->junit#junit;4.10 [runtime->compile]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies junit#junit;4.10->org.hamcrest#hamcrest-core;1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.beanshell#bsh;2.0b4 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->jgrapht#jgrapht;0.6.0 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.jwordnet#jwnl;1.4_rc3 [runtime->compile]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies net.sf.jwordnet#jwnl;1.4_rc3->commons-logging#commons-logging;1.1.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->net.sf.trove4j#trove4j;2.0.2 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->com.googlecode.matrix-toolkits-java#mtj;0.9.14 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.matrix-toolkits-java#mtj;0.9.14->com.googlecode.netlib-java#netlib-java;0.9.3 [runtime->compile]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.googlecode.netlib-java#netlib-java;0.9.3->net.sourceforge.f2j#arpack_combined_all;0.1 [runtime->compile]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies cc.mallet#mallet;2.0.7->org.jdom#jdom;1.1 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->cc.mallet#mallet;2.0.7 [compile->master]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [optional]
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [provided]
+[debug] resolving dependencies for configuration 'plugin'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [plugin]
+[debug] resolving dependencies for configuration 'sources'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [sources]
+[debug] resolving dependencies for configuration 'docs'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [docs]
+[debug] resolving dependencies for configuration 'pom'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [pom]
+[debug] resolving dependencies for configuration 'scala-tool'
+[debug] == resolving dependencies for default#diffbotsequencemodel_2.12;1.0 [scala-tool]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-compiler;2.12.2 [scala-tool->default]
+[info] Resolving org.scala-lang#scala-compiler;2.12.2 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.12.2 {scala-tool=[default, optional(default)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.12.2
+[debug] 	found org.scala-lang#scala-compiler;2.12.2 in sbt-chain
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-compiler;2.12.2 [scala-tool->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-compiler;2.12.2 [scala-tool->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->default]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->runtime]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->master]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->optional(default)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-reflect;2.12.2 [compile->master(compile)]
+[info] Resolving org.scala-lang#scala-reflect;2.12.2 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.12.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.2
+[debug] 	found org.scala-lang#scala-reflect;2.12.2 in sbt-chain
+[debug] 	[2.12.2] org.scala-lang#scala-reflect;2.12.2
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-reflect;2.12.2 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.12.2->org.scala-lang#scala-library;2.12.2 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-reflect;2.12.2 [compile->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-reflect;2.12.2 [compile->compile]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.12.2->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-reflect;2.12.2->org.scala-lang#scala-library;2.12.2 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->master(compile)]
+[info] Resolving org.scala-lang.modules#scala-xml_2.12;1.0.6 ...
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.12;1.0.6
+[debug] 	found org.scala-lang.modules#scala-xml_2.12;1.0.6 in sbt-chain
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.2 [compile->master(compile)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.2 [compile->compile(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang.modules#scala-xml_2.12;1.0.6 [compile->compile]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.0 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.12;1.0.6->org.scala-lang#scala-library;2.12.2 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-library;2.12.2 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-reflect;2.12.2 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang#scala-reflect;2.12.2 [runtime->compile]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->runtime(*)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->org.scala-lang.modules#scala-xml_2.12;1.0.6 [runtime->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-compiler;2.12.2 [scala-tool->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-compiler;2.12.2 [scala-tool->optional(default)]
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->jline#jline;2.14.3 [optional->master(compile)]
+[info] Resolving jline#jline;2.14.3 ...
+[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.14.3 {optional=[compile(*), master(compile)]}
+[debug] sbt-chain: module revision found in cache: jline#jline;2.14.3
+[debug] 	found jline#jline;2.14.3 in sbt-chain
+[debug] == resolving dependencies org.scala-lang#scala-compiler;2.12.2->jline#jline;2.14.3 [optional->compile(*)]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [scala-tool->default]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [scala-tool->runtime]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [scala-tool->compile]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [scala-tool->master]
+[debug] == resolving dependencies default#diffbotsequencemodel_2.12;1.0->org.scala-lang#scala-library;2.12.2 [scala-tool->optional(default)]
+[debug] 	resolved ivy file produced in cache
+[debug] :: downloading artifacts ::
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.2!scala-library.jar
+[debug] 		tried https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar
+[info] downloading https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.jar
+[info] 	[SUCCESSFUL ] cc.mallet#mallet;2.0.7!mallet.jar (6007ms)
+[debug] 		tried https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar
+[info] downloading https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar
+[info] 	[SUCCESSFUL ] junit#junit;4.10!junit.jar (879ms)
+[debug] 		tried https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[info] downloading https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+[info] 	[SUCCESSFUL ] org.beanshell#bsh;2.0b4!bsh.jar (949ms)
+[debug] 		tried https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar
+[info] downloading https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar
+[info] 	[SUCCESSFUL ] jgrapht#jgrapht;0.6.0!jgrapht.jar (389ms)
+[debug] 		tried https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar
+[info] downloading https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.jar
+[info] 	[SUCCESSFUL ] net.sf.jwordnet#jwnl;1.4_rc3!jwnl.jar (415ms)
+[debug] 		tried https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar
+[info] downloading https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.jar
+[info] 	[SUCCESSFUL ] net.sf.trove4j#trove4j;2.0.2!trove4j.jar (1913ms)
+[debug] 		tried https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar
+[info] downloading https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.jar
+[info] 	[SUCCESSFUL ] com.googlecode.matrix-toolkits-java#mtj;0.9.14!mtj.jar (1934ms)
+[debug] 		tried https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar
+[info] downloading https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar
+[info] 	[SUCCESSFUL ] org.jdom#jdom;1.1!jdom.jar (825ms)
+[debug] 		tried https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[info] downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[info] 	[SUCCESSFUL ] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar (394ms)
+[debug] 		tried https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[info] downloading https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[info] 	[SUCCESSFUL ] commons-logging#commons-logging;1.1.1!commons-logging.jar (301ms)
+[debug] 		tried https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar
+[info] downloading https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar
+[info] 	[SUCCESSFUL ] com.googlecode.netlib-java#netlib-java;0.9.3!netlib-java.jar (943ms)
+[debug] 	[NOT REQUIRED] net.sourceforge.f2j#arpack_combined_all;0.1!arpack_combined_all.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.2!scala-compiler.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.2!scala-reflect.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)
+[debug] 	[NOT REQUIRED] jline#jline;2.14.3!jline.jar
+[debug] :: resolution report :: resolve 9475ms :: artifacts dl 14963ms
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 compile produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-compile.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 runtime produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-runtime.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 test produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-test.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 provided produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-provided.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 optional produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-optional.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 compile-internal produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-compile-internal.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 runtime-internal produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-runtime-internal.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 test-internal produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-test-internal.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 plugin produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-plugin.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 sources produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-sources.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 docs produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-docs.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 pom produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-pom.xml
+[debug] 	report for default#diffbotsequencemodel_2.12;1.0 scala-tool produced in /Users/alexminnaar/IdeaProjects/DiffbotSequenceModel/target/resolution-cache/reports/default-diffbotsequencemodel_2.12-scala-tool.xml
+[debug] 	resolve done (9475ms resolve - 14963ms download)
+[info] Done updating.
