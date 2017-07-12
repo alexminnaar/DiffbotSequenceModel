@@ -7,15 +7,30 @@
 		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170628133140"/>
+		date="20170710132941"/>
 	<dependencies>
+		<module organisation="org.jsoup" name="jsoup">
+			<revision name="1.10.2" status="release" pubdate="20170102114116" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jsoup.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<license name="The MIT License" url="https://jsoup.org/license"/>
+				<metadata-artifact status="no" details="" size="3363" time="0" location="/Users/alexminnaar/.ivy2/cache/org.jsoup/jsoup/ivy-1.10.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.pom"/>
+				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.10.2" rev-constraint-default="1.10.2" rev-constraint-dynamic="1.10.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jsoup" type="jar" ext="jar" status="no" details="" size="350645" time="0" location="/Users/alexminnaar/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.10.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar"/>
+					</artifact>
+					<artifact name="jsoup" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="168517" time="0" location="/Users/alexminnaar/.ivy2/cache/org.jsoup/jsoup/srcs/jsoup-1.10.2-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jsoup/jsoup/1.10.2/jsoup-1.10.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="cc.mallet" name="mallet">
 			<revision name="2.0.7" status="release" pubdate="20111026162010" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mallet.cs.umass.edu/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Common Public License Version 1.0" url="http://www.eclipse.org/legal/cpl-v10.html"/>
 				<metadata-artifact status="no" details="" size="3754" time="0" location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/ivy-2.0.7.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.0.7" rev-constraint-default="2.0.7" rev-constraint-dynamic="2.0.7" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="mallet" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1427856" time="3772" location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/srcs/mallet-2.0.7-sources.jar">
+					<artifact name="mallet" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1427856" time="0" location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/srcs/mallet-2.0.7-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/cc/mallet/mallet/2.0.7/mallet-2.0.7-sources.jar"/>
 					</artifact>
 					<artifact name="mallet" type="jar" ext="jar" status="no" details="" size="2125837" time="0" location="/Users/alexminnaar/.ivy2/cache/cc.mallet/mallet/jars/mallet-2.0.7.jar">
@@ -25,26 +40,26 @@
 			</revision>
 		</module>
 		<module organisation="org.jdom" name="jdom">
-			<revision name="1.1" status="release" pubdate="20071113231607" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jdom.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+			<revision name="1.1" status="release" pubdate="20071113231607" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jdom.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<metadata-artifact status="no" details="" size="3322" time="0" location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="jdom" type="jar" ext="jar" status="no" details="" size="153115" time="0" location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/jars/jdom-1.1.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1.jar"/>
 					</artifact>
-					<artifact name="jdom" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="234978" time="2800" location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/srcs/jdom-1.1-sources.jar">
+					<artifact name="jdom" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="234978" time="0" location="/Users/alexminnaar/.ivy2/cache/org.jdom/jdom/srcs/jdom-1.1-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jdom/jdom/1.1/jdom-1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.googlecode.matrix-toolkits-java" name="mtj">
-			<revision name="0.9.14" status="release" pubdate="20110827114713" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/matrix-toolkits-java/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+			<revision name="0.9.14" status="release" pubdate="20110827114713" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/matrix-toolkits-java/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl.html"/>
 				<metadata-artifact status="no" details="" size="2694" time="0" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/ivy-0.9.14.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="0.9.14" rev-constraint-default="0.9.14" rev-constraint-dynamic="0.9.14" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="mtj" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="234162" time="1399" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/srcs/mtj-0.9.14-sources.jar">
+					<artifact name="mtj" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="234162" time="0" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/srcs/mtj-0.9.14-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/com/googlecode/matrix-toolkits-java/mtj/0.9.14/mtj-0.9.14-sources.jar"/>
 					</artifact>
 					<artifact name="mtj" type="jar" ext="jar" status="no" details="" size="632301" time="0" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.matrix-toolkits-java/mtj/jars/mtj-0.9.14.jar">
@@ -54,12 +69,12 @@
 			</revision>
 		</module>
 		<module organisation="com.googlecode.netlib-java" name="netlib-java">
-			<revision name="0.9.3" status="release" pubdate="20110829205531" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/netlib-java/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+			<revision name="0.9.3" status="release" pubdate="20110829205531" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/netlib-java/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2628" time="0" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="netlib-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="481926" time="4151" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/srcs/netlib-java-0.9.3-sources.jar">
+					<artifact name="netlib-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="481926" time="0" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/srcs/netlib-java-0.9.3-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3-sources.jar"/>
 					</artifact>
 					<artifact name="netlib-java" type="jar" ext="jar" status="no" details="" size="131210" time="0" location="/Users/alexminnaar/.ivy2/cache/com.googlecode.netlib-java/netlib-java/jars/netlib-java-0.9.3.jar">
@@ -69,12 +84,12 @@
 			</revision>
 		</module>
 		<module organisation="net.sf.trove4j" name="trove4j">
-			<revision name="2.0.2" status="release" pubdate="20100914013807" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://trove4j.sf.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="2.0.2" status="release" pubdate="20100914013807" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://trove4j.sf.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
 				<license name="GNU Lesser General Public License 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
 				<metadata-artifact status="no" details="" size="2415" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/ivy-2.0.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.0.2" rev-constraint-default="2.0.2" rev-constraint-dynamic="2.0.2" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="trove4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="664970" time="2300" location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/srcs/trove4j-2.0.2-sources.jar">
+					<artifact name="trove4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="664970" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/srcs/trove4j-2.0.2-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/net/sf/trove4j/trove4j/2.0.2/trove4j-2.0.2-sources.jar"/>
 					</artifact>
 					<artifact name="trove4j" type="jar" ext="jar" status="no" details="" size="740642" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sf.trove4j/trove4j/jars/trove4j-2.0.2.jar">
@@ -84,12 +99,12 @@
 			</revision>
 		</module>
 		<module organisation="net.sf.jwordnet" name="jwnl">
-			<revision name="1.4_rc3" status="release" pubdate="20110913123321" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jwordnet.sf.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+			<revision name="1.4_rc3" status="release" pubdate="20110913123321" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jwordnet.sf.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
 				<license name="BSD 3-Clause License" url="http://jwordnet.svn.sourceforge.net/svnroot/jwordnet/trunk/jwnl/license.txt"/>
 				<metadata-artifact status="no" details="" size="3095" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/ivy-1.4_rc3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.4_rc3" rev-constraint-default="1.4_rc3" rev-constraint-dynamic="1.4_rc3" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="jwnl" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="129383" time="1596" location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/srcs/jwnl-1.4_rc3-sources.jar">
+					<artifact name="jwnl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="129383" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/srcs/jwnl-1.4_rc3-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/net/sf/jwordnet/jwnl/1.4_rc3/jwnl-1.4_rc3-sources.jar"/>
 					</artifact>
 					<artifact name="jwnl" type="jar" ext="jar" status="no" details="" size="199926" time="0" location="/Users/alexminnaar/.ivy2/cache/net.sf.jwordnet/jwnl/jars/jwnl-1.4_rc3.jar">
@@ -99,40 +114,15 @@
 			</revision>
 		</module>
 		<module organisation="commons-logging" name="commons-logging">
-			<revision name="1.1.1" status="release" pubdate="20080831044520" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+			<revision name="1.1.1" status="release" pubdate="20080831044520" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
 				<metadata-artifact status="no" details="" size="3971" time="0" location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="74976" time="401" location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.1-sources.jar">
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74976" time="0" location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
 					</artifact>
 					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/Users/alexminnaar/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="jgrapht" name="jgrapht">
-			<revision name="0.6.0" status="release" pubdate="20060511163845" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jgrapht.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
-				<license name="GNU Lesser General Public License Version 2.1, February 1999" url="http://jgrapht.sourceforge.net/LGPL.html"/>
-				<metadata-artifact status="no" details="" size="2463" time="0" location="/Users/alexminnaar/.ivy2/cache/jgrapht/jgrapht/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.pom"/>
-				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="jgrapht" type="jar" ext="jar" status="no" details="" size="90125" time="0" location="/Users/alexminnaar/.ivy2/cache/jgrapht/jgrapht/jars/jgrapht-0.6.0.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/jgrapht/jgrapht/0.6.0/jgrapht-0.6.0.jar"/>
-					</artifact>
-					<artifact name="jgrapht" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.beanshell" name="bsh">
-			<revision name="2.0b4" status="release" pubdate="20080831044725" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
-				<metadata-artifact status="no" details="" size="2207" time="0" location="/Users/alexminnaar/.ivy2/cache/org.beanshell/bsh/ivy-2.0b4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.pom"/>
-				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.0b4" rev-constraint-default="2.0b4" rev-constraint-dynamic="2.0b4" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="bsh" type="src" ext="jar" extra-classifier="sources" status="failed" details="" size="0" time="0"/>
-					<artifact name="bsh" type="jar" ext="jar" status="no" details="" size="281694" time="0" location="/Users/alexminnaar/.ivy2/cache/org.beanshell/bsh/jars/bsh-2.0b4.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -146,7 +136,7 @@
 					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="253160" time="0" location="/Users/alexminnaar/.ivy2/cache/junit/junit/jars/junit-4.10.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/junit/junit/4.10/junit-4.10.jar"/>
 					</artifact>
-					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="141185" time="823" location="/Users/alexminnaar/.ivy2/cache/junit/junit/srcs/junit-4.10-sources.jar">
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="141185" time="0" location="/Users/alexminnaar/.ivy2/cache/junit/junit/srcs/junit-4.10-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/junit/junit/4.10/junit-4.10-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -157,7 +147,7 @@
 				<metadata-artifact status="no" details="" size="4339" time="0" location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom"/>
 				<caller organisation="default" name="diffbotsequencemodel$sources_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="327" time="299" location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.1-sources.jar">
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="327" time="0" location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.1-sources.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar"/>
 					</artifact>
 					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="76643" time="0" location="/Users/alexminnaar/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar">

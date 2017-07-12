@@ -4,7 +4,7 @@
 		module="diffbotsequencemodel_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170628133115"
+		publication="20170710132939"
 	>
 		<description>
 		DiffbotSequenceModel
@@ -35,5 +35,7 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.2" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.2" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="cc.mallet" name="mallet" rev="2.0.7" conf="compile->default(compile)"/>
+		<dependency org="org.jsoup" name="jsoup" rev="1.10.2" conf="compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.2.0-SNAP4" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>
