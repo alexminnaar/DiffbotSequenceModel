@@ -6,9 +6,10 @@ import scala.collection.JavaConversions._
 
 object Preprocessing {
 
-  def htmlFile2TrainingExamples(fileLocation: File): Vector[Tag] = {
+  def htmlFile2Examples(fileLocation: File): Vector[Tag] = {
 
-    val validTags = Set("a", "span", "img", "meta", "h4", "p", "input", "h3", "h2", "div", "title", "dd", "h1", "li", "strong", "sup", "ul")
+    val validTags = Set("a", "span", "img", "meta", "h4", "p", "input", "h3",
+      "h2", "div", "title", "dd", "h1", "li", "strong", "sup", "ul", "link", "b", "td", "strike","em")
     var seenTags: Set[String] = Set()
     val html = Jsoup.parse(fileLocation, "UTF-8")
     val tags = html.select("*")
@@ -43,37 +44,3 @@ object Preprocessing {
   }
 
 }
-
-//object Test extends App {
-//
-//  val examples = Preprocessing.htmlFile2TrainingExamples(new File("/users/alexminnaar/diffbot_examples/dillards.html"))
-//
-//
-//  val myCrf = Crf.train("training_data.txt")
-//
-//  examples.foreach { ex =>
-//
-//    val prediction = Crf.predict(myCrf,ex.tokens.toArray)
-//
-//    var printPred = true
-//    var idx=0
-//
-//    while(printPred && idx < prediction._1.length){
-//
-//      if(prediction._1(idx)._2=="P"){
-//        println("<================================ FOUND PREDICTION ================================>")
-//        println(prediction._1)
-//        println(prediction._2)
-//        println(prediction._3)
-//        printPred=false
-//      }
-//
-//      idx+=1
-//
-//
-//    }
-//
-//  }
-//
-//
-//}

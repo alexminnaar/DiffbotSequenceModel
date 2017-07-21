@@ -17,6 +17,38 @@ import scala.collection.JavaConversions._
 
 object Crf {
 
+  def predictedTokens2String(predictedTokens: List[(String, String)]): Vector[String] = {
+
+    var stringPredictions = Vector.empty[String]
+    var predictedString = new StringBuilder()
+    var lastPrediction = ""
+
+    //iterate through token predictions and concatenate contiguous predictions into a single string
+    predictedTokens.foreach { tokenPrediction =>
+
+      val token = tokenPrediction._1
+      val prediction = tokenPrediction._2
+
+      if (prediction != "O" && prediction == lastPrediction) {
+        predictedString.append(s" $token")
+      }
+      else if (prediction != "O" && prediction != lastPrediction) {
+        if (!predictedString.isEmpty) {
+          stringPredictions :+= predictedString.toString()
+        }
+        predictedString = new StringBuilder()
+        predictedString.append(token)
+      }
+      lastPrediction = prediction
+    }
+
+    //if tag ends in a prediction make sure to append it
+    if (!predictedString.isEmpty) {
+      stringPredictions :+= predictedString.toString()
+    }
+
+    stringPredictions
+  }
 
   def predict(crf: CRF, tokens: Array[Array[String]]): Prediction = {
 
@@ -51,12 +83,16 @@ object Crf {
       ps(idx) = lattice.getGammaProbability(idx + 1, crf.getState(pred))
     }
 
-    Prediction(predictedLabels.toList, p)
+    Prediction(
+      tokenPredictions = predictedLabels.toList,
+      predictionAsString = predictedTokens2String(predictedLabels.toList),
+      confidence = p
+    )
 
   }
 
 
-  def train(trainingFilename: String): CRF = {
+  def train(trainingFilename: String, trainTestSplit: Array[Double]): CRF = {
 
     var pipes = new ListBuffer[Pipe]()
 
@@ -92,7 +128,7 @@ object Crf {
 
     val r = new Random(System.currentTimeMillis())
 
-    val trainingLists = allTrainingInstances.split(r, Array(100.0, 0.0))
+    val trainingLists = allTrainingInstances.split(r, trainTestSplit)
     val trainingInstances = trainingLists(0)
     val testInstances = trainingLists(1)
 
@@ -115,11 +151,13 @@ object Crf {
 
   def htmlParse(htmlTags: Vector[Tag], model: CRF): ParseResult = {
 
-
     var titlePredictions = Vector.empty[Prediction]
     var pricePredictions = Vector.empty[Prediction]
     var imagePredictions = Vector.empty[Prediction]
-
+    var skuPredictions = Vector.empty[Prediction]
+    var canonicalUrlPredictions = Vector.empty[Prediction]
+    var inStockPredictions = Vector.empty[Prediction]
+    var mpnPredictions = Vector.empty[Prediction]
 
     //predict each tag
     htmlTags.foreach { t =>
@@ -146,6 +184,26 @@ object Crf {
           predNotFound = false
         }
 
+        if (prediction.tokenPredictions(idx)._2 == "S") {
+          skuPredictions :+= prediction
+          predNotFound = false
+        }
+
+        if (prediction.tokenPredictions(idx)._2 == "CU") {
+          canonicalUrlPredictions :+= prediction
+          predNotFound = false
+        }
+
+        if (prediction.tokenPredictions(idx)._2 == "INSTOCK") {
+          inStockPredictions :+= prediction
+          predNotFound = false
+        }
+
+        if (prediction.tokenPredictions(idx)._2 == "M") {
+          mpnPredictions :+= prediction
+          predNotFound = false
+        }
+
         idx += 1
       }
 
@@ -158,15 +216,53 @@ object Crf {
     pricePredictions.sortBy(-_.confidence).foreach(println)
     println("TOP IMAGES")
     imagePredictions.sortBy(-_.confidence).foreach(println)
+    println("TOP SKU")
+    skuPredictions.sortBy(-_.confidence).foreach(println)
+    println("TOP CANONICAL URL")
+    canonicalUrlPredictions.sortBy(-_.confidence).foreach(println)
+    println("TOP INSTOCK")
+    inStockPredictions.sortBy(-_.confidence).foreach(println)
+    println("TOP MPN")
+    mpnPredictions.sortBy(-_.confidence).foreach(println)
+
 
 
     //sort by confidence to find the most likely predictions for each item extracted
     val mostLikelyTitle: Option[Prediction] = if (titlePredictions.length > 0) Some(titlePredictions.sortBy(-_.confidence).head) else None
     val mostLikelyPrice: Option[Prediction] = if (pricePredictions.length > 0) Some(pricePredictions.sortBy(-_.confidence).head) else None
-    val mostLikelyImage: Option[Prediction] = if (imagePredictions.length > 0) Some(imagePredictions.sortBy(-_.confidence).head) else None
+    var mostLikelyImage: Option[Prediction] = if (imagePredictions.length > 0) Some(imagePredictions.sortBy(-_.confidence).head) else None
+    val mostLikelySku: Option[Prediction] = if (skuPredictions.length > 0) Some(skuPredictions.sortBy(-_.confidence).head) else None
+    val mostLikelyAvailability: Option[Prediction] = if (inStockPredictions.length > 0) Some(inStockPredictions.sortBy(-_.confidence).head) else None
+    val mostLikelyCanonicalUrl: Option[Prediction] = if (canonicalUrlPredictions.length > 0) Some(canonicalUrlPredictions.sortBy(-_.confidence).head) else None
+    val mostLikelyMpn: Option[Prediction] = if (mpnPredictions.length > 0) Some(mpnPredictions.sortBy(-_.confidence).head) else None
 
 
-    ParseResult(title = mostLikelyTitle, price = mostLikelyPrice, image = mostLikelyImage)
+    //The following is an Amazon-specific heuristic which says that the image tag with the most tokens in common with the title is the correct image tag
+    if (mostLikelyImage.isDefined && !mostLikelyImage.get.tokenPredictions.map(_._1).contains("og:image")) {
+      val titleTokens = mostLikelyTitle.get.tokenPredictions.map(_._1)
+      val imageTokens = imagePredictions.filter(_.confidence > 0.7)
+
+      val intersection = imageTokens.map(it => (it, titleTokens.intersect(it.tokenPredictions.map(_._1)).size))
+
+      if (intersection.length > 0) {
+        mostLikelyImage = Some(intersection.sortBy(-_._2).head._1)
+      }
+
+    }
+
+
+
+
+
+    ParseResult(
+      title = mostLikelyTitle,
+      price = mostLikelyPrice,
+      image = mostLikelyImage,
+      sku = mostLikelySku,
+      availability = mostLikelyAvailability,
+      canonicalUrl = mostLikelyCanonicalUrl,
+      mpn = mostLikelyMpn
+    )
   }
 
 }
