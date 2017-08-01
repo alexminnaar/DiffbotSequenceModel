@@ -1,19 +1,28 @@
 package com.viglink.diffbotsequencemodel
 
 import java.io.File
+
 import org.jsoup.Jsoup
+import org.jsoup.nodes.{Document, Node}
+
 import scala.collection.JavaConversions._
 
 object Preprocessing {
 
-  def htmlFile2Examples(fileLocation: File): Vector[Tag] = {
+  /**
+    * Given an Jsoup document extract the html tags
+    * @param html Jsoup document
+    * @return a vector of html tags
+    */
+  def htmlFile2Examples(html: Document): Vector[Tag] = {
 
     val validTags = Set("a", "span", "img", "meta", "h4", "p", "input", "h3",
-      "h2", "div", "title", "dd", "h1", "li", "strong", "sup", "ul", "link", "b", "td", "strike","em")
+      "h2", "div", "title", "dd", "h1", "li", "strong", "sup", "ul", "link", "b", "td", "strike", "em")
     var seenTags: Set[String] = Set()
-    val html = Jsoup.parse(fileLocation, "UTF-8")
+
     val tags = html.select("*")
     var examples: Vector[Tag] = Vector()
+    var indexCounter = 0
 
     tags.foreach { tag =>
 
@@ -35,12 +44,33 @@ object Preprocessing {
               tagVec :+= Array(tt.trim())
             }
           }
-          examples :+= Tag(tagVec)
+          examples :+= Tag(tokens = tagVec, index = indexCounter)
+          indexCounter += 1
         }
         seenTags += tag.toString
       }
     }
     examples
+  }
+
+  /**
+    * Remove comments from html
+    * @param node Jsoup node with comments
+    * @return Jsoup node without comments
+    */
+  def removeComments(node: Node): Node = {
+
+    node.childNodes().foreach { cn =>
+
+      if (cn.nodeName().equals("#comment")) {
+        cn.remove()
+      }
+      else {
+        removeComments(cn)
+      }
+    }
+
+    node
   }
 
 }

@@ -1,11 +1,12 @@
 package com.viglink.diffbotsequencemodel
 
 
-case class Tag(tokens: Vector[Array[String]])
+case class Tag(tokens: Vector[Array[String]], index:Int)
 
 case class Prediction(tokenPredictions: List[(String, String)],
                       predictionAsString: Vector[String],
-                      confidence: Double)
+                      confidence: Double,
+                      tagIndex:Int)
 
 case class ParseResult(title: Option[Prediction],
                        price: Option[Prediction],

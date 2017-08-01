@@ -1,19 +1,17 @@
 package com.viglink.diffbotsequencemodel
 
-import java.io.File
 
 object Demo extends App {
 
   //train model
-  val myCrf = Crf.train(trainingFilename = "training_data.txt", trainTestSplit = Array(100.0, 0.0))
+  val myCrf = DiffbotModel.train(trainingFilename = "training_data.txt", trainTestSplit = Array(100.0, 0.0))
 
-  //parse page using trained model
-  val examples = Preprocessing.htmlFile2Examples(new File("/users/alexminnaar/merchantOrPublisher_evaluation/barneys_1.html"))
-  val result = Crf.htmlParse(htmlTags = examples, model = myCrf)
-
-  println("\n\n\n\nFINAL RESULTS:")
+  //extract info from url
+  val url = "https://www.gund.com/product/detective+pusheen+-+4054854.do?sortby=newArrivals&refType=&from=fn"
+  val result = DiffbotModel.urlParse(url, myCrf)
 
   //print results
+  println("\n\n\n\nFINAL RESULTS:")
   println("Title: ")
   println(result.title)
   println("Price: ")
