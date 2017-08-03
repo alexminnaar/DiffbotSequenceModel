@@ -7,7 +7,7 @@ object Demo extends App {
   val myCrf = DiffbotModel.train(trainingFilename = "training_data.txt", trainTestSplit = Array(100.0, 0.0))
 
   //extract info from url
-  val url = "https://www.gund.com/product/detective+pusheen+-+4054854.do?sortby=newArrivals&refType=&from=fn"
+  val url = "https://www.radioshack.com/collections/walkie-talkies/products/midland-20-mile-22ch"
   val result = DiffbotModel.urlParse(url, myCrf)
 
   //print results
